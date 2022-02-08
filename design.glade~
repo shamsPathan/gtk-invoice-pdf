@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="shams">
+    <property name="name">shams</property>
+    <property name="width-request">1000</property>
+    <property name="height-request">900</property>
+    <property name="can-focus">False</property>
+    <property name="hexpand">True</property>
+    <property name="vexpand">True</property>
+    <child>
+      <object class="GtkScrolledWindow">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="shadow-type">in</property>
+        <property name="max-content-width">750</property>
+        <property name="max-content-height">900</property>
+        <child>
+          <object class="GtkViewport">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="hscroll-policy">natural</property>
+            <property name="vscroll-policy">natural</property>
+            <child>
+              <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="margin-left">5</property>
+                <property name="margin-right">5</property>
+                <property name="margin-top">5</property>
+                <property name="margin-bottom">5</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <!-- n-columns=3 n-rows=3 -->
+                  <object class="GtkGrid">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-right">10</property>
+                    <property name="margin-top">10</property>
+                    <property name="margin-bottom">20</property>
+                    <child>
+                      <object class="GtkLabel" id="lbl_date">
+                        <property name="name">lbl_date</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-left">10</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">10</property>
+                        <property name="margin-bottom">10</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Date</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_invoice_nr">
+                        <property name="name">lbl_invoice_nr</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-left">10</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">10</property>
+                        <property name="margin-bottom">10</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Invoice No.</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_currency">
+                        <property name="name">lbl_currency</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-left">10</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">10</property>
+                        <property name="margin-bottom">10</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Currency</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_invoice_nr">
+                        <property name="name">input_invoice_nr</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="text" translatable="yes">0/2018</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkComboBoxText" id="input_currency">
+                        <property name="name">input_currency</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="active">0</property>
+                        <items>
+                          <item translatable="yes">EUR</item>
+                          <item translatable="yes">PLN</item>
+                          <item translatable="yes">USD</item>
+                        </items>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkCalendar" id="input_date">
+                        <property name="name">input_date</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="year">2022</property>
+                        <property name="month">2</property>
+                        <property name="day">10</property>
+                        <property name="show-details">False</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <!-- n-columns=4 n-rows=8 -->
+                  <object class="GtkGrid">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-left">5</property>
+                    <property name="margin-right">5</property>
+                    <property name="border-width">1</property>
+                    <property name="row-homogeneous">True</property>
+                    <child>
+                      <object class="GtkLabel" id="lbl_seller_name">
+                        <property name="name">lbl_seller_name</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Full Name</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_seller_business">
+                        <property name="name">lbl_seller_business</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Business name</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_seller_address">
+                        <property name="name">lbl_seller_address</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Address</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">3</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="margin-left">10</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">10</property>
+                        <property name="margin-bottom">10</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Seller</property>
+                        <attributes>
+                          <attribute name="font-desc" value="Sans 16"/>
+                          <attribute name="underline" value="True"/>
+                          <attribute name="foreground" value="#000000000000"/>
+                          <attribute name="background" value="#eeeeeeeeecec"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">0</property>
+                        <property name="width">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="margin-left">10</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">10</property>
+                        <property name="margin-bottom">10</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Buyer</property>
+                        <attributes>
+                          <attribute name="font-desc" value="Sans 16"/>
+                          <attribute name="underline" value="True"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">0</property>
+                        <property name="width">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_seller_zip">
+                        <property name="name">lbl_seller_zip</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Zip Code</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">4</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_seller_city">
+                        <property name="name">lbl_seller_city</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">City</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_seller_country">
+                        <property name="name">lbl_seller_country</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Country</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">6</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_seller_nip">
+                        <property name="name">lbl_seller_nip</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">NIP</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">7</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_buyer_name">
+                        <property name="name">lbl_buyer_name</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Full Name</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_buyer_business">
+                        <property name="name">lbl_buyer_business</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Business name</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_buyer_address">
+                        <property name="name">lbl_buyer_address</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Address</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">3</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_buyer_zip">
+                        <property name="name">lbl_buyer_zip</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Zip Code</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">4</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_buyer_city">
+                        <property name="name">lbl_buyer_city</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">City</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_buyer_country">
+                        <property name="name">lbl_buyer_country</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">Country</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">6</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_buyer_nip">
+                        <property name="name">lbl_buyer_nip</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">end</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="label" translatable="yes">NIP</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">7</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_seller_name">
+                        <property name="name">input_seller_name</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="input-purpose">name</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_seller_business">
+                        <property name="name">input_seller_business</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_seller_address">
+                        <property name="name">input_seller_address</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">3</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_seller_zip">
+                        <property name="name">input_seller_zip</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">4</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_seller_city">
+                        <property name="name">input_seller_city</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_seller_nip">
+                        <property name="name">input_seller_nip</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">7</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_buyer_name">
+                        <property name="name">input_buyer_name</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">True</property>
+                        <property name="input-purpose">name</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">3</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_buyer_business">
+                        <property name="name">input_buyer_business</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">3</property>
+                        <property name="top-attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_buyer_address">
+                        <property name="name">input_buyer_address</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">3</property>
+                        <property name="top-attach">3</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_buyer_zip">
+                        <property name="name">input_buyer_zip</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">3</property>
+                        <property name="top-attach">4</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_buyer_city">
+                        <property name="name">input_buyer_city</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">3</property>
+                        <property name="top-attach">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_buyer_nip">
+                        <property name="name">input_buyer_nip</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <signal name="changed" handler="on_input_buyer_nip_changed" object="input_buyer_country" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left-attach">3</property>
+                        <property name="top-attach">7</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkComboBoxText" id="input_seller_country">
+                        <property name="name">input_seller_country</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="active">0</property>
+                        <items>
+                          <item translatable="yes">Bangladesh</item>
+                        </items>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">6</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkComboBoxText" id="input_buyer_country">
+                        <property name="name">input_buyer_country</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="active">18</property>
+                        <items>
+                          <item id="AF" translatable="yes">Afganistan</item>
+                          <item id="AX" translatable="yes">Wyspy Alandzkie</item>
+                          <item id="AL" translatable="yes">Albania</item>
+                          <item id="DZ" translatable="yes">Algeria</item>
+                          <item id="AS" translatable="yes">Samoa Amerykańskie</item>
+                          <item id="AD" translatable="yes">Andorra</item>
+                          <item id="AO" translatable="yes">Angola</item>
+                          <item id="AI" translatable="yes">Anguilla</item>
+                          <item id="AQ" translatable="yes">Antarktyka</item>
+                          <item id="AG" translatable="yes">Antigua i Barbuda</item>
+                          <item id="AR" translatable="yes">Argentyna</item>
+                          <item id="AM" translatable="yes">Armenia</item>
+                          <item id="AW" translatable="yes">Aruba</item>
+                          <item id="AU" translatable="yes">Australia</item>
+                          <item id="AT" translatable="yes">Austria</item>
+                          <item id="AZ" translatable="yes">Azerbejdżan</item>
+                          <item id="BS" translatable="yes">Bahamy</item>
+                          <item id="BH" translatable="yes">Bahrajn</item>
+                          <item id="BD" translatable="yes">Banglades</item>
+                          <item id="BB" translatable="yes">Barbados</item>
+                          <item id="BY" translatable="yes">Białoruś</item>
+                          <item id="BE" translatable="yes">Belgia</item>
+                          <item id="BZ" translatable="yes">Belize</item>
+                          <item id="BJ" translatable="yes">Benin</item>
+                          <item id="BM" translatable="yes">Bermudy</item>
+                          <item id="BT" translatable="yes">Bhutan</item>
+                          <item id="BO" translatable="yes">Boliwia</item>
+                          <item id="BA" translatable="yes">Bośnia i Herzegowina</item>
+                          <item id="BW" translatable="yes">Botswana</item>
+                          <item id="BV" translatable="yes">Wyspa Bouveta</item>
+                          <item id="BR" translatable="yes">Brazylia</item>
+                          <item id="IO" translatable="yes">Brytyjskie Terytorium Oceanu Indyjskiego</item>
+                          <item id="BN" translatable="yes">Brunei</item>
+                          <item id="BG" translatable="yes">Bułgaria</item>
+                          <item id="BF" translatable="yes">Burkina Faso</item>
+                          <item id="BI" translatable="yes">Burundi</item>
+                          <item id="KH" translatable="yes">Kambodża</item>
+                          <item id="CM" translatable="yes">Kamerun</item>
+                          <item id="CA" translatable="yes">Kanada</item>
+                          <item id="CV" translatable="yes">Republika Zielonego Przylądka</item>
+                          <item id="KY" translatable="yes">Kajmany</item>
+                          <item id="CF" translatable="yes">Republika Środkowoafrykańska</item>
+                          <item id="TD" translatable="yes">Czad</item>
+                          <item id="CL" translatable="yes">Chile</item>
+                          <item id="CN" translatable="yes">Chiny</item>
+                          <item id="CX" translatable="yes">Wyspa Bożego Narodzenia</item>
+                          <item id="CC" translatable="yes">Wyspy Kokosowe</item>
+                          <item id="CO" translatable="yes">Kolumbia</item>
+                          <item id="KM" translatable="yes">Komory</item>
+                          <item id="CG" translatable="yes">Kongo</item>
+                          <item id="CD" translatable="yes">Demokratyczna Republika Konga</item>
+                          <item id="CK" translatable="yes">Wyspy Cooka</item>
+                          <item id="CR" translatable="yes">Kostaryka</item>
+                          <item id="CI" translatable="yes">Wybrzeże Kości Słoniowej</item>
+                          <item id="HR" translatable="yes">Chorwacja</item>
+                          <item id="CU" translatable="yes">Kuba</item>
+                          <item id="CY" translatable="yes">Cypr</item>
+                          <item id="CZ" translatable="yes">Czechy</item>
+                          <item id="DK" translatable="yes">Dania</item>
+                          <item id="DJ" translatable="yes">Dżibuti</item>
+                          <item id="DM" translatable="yes">Dominika</item>
+                          <item id="DO" translatable="yes">Republika Dominikany</item>
+                          <item id="EC" translatable="yes">Ekwador</item>
+                          <item id="EG" translatable="yes">Egipt</item>
+                          <item id="SV" translatable="yes">Salwador</item>
+                          <item id="GQ" translatable="yes">Gwinea Równikowa</item>
+                          <item id="ER" translatable="yes">Erytrea</item>
+                          <item id="EE" translatable="yes">Estonia</item>
+                          <item id="ET" translatable="yes">Etiopia</item>
+                          <item id="FK" translatable="yes">Falklandy/Malwiny</item>
+                          <item id="FO" translatable="yes">Wyspy Owcze</item>
+                          <item id="FJ" translatable="yes">Fidżi</item>
+                          <item id="FI" translatable="yes">Finlandia</item>
+                          <item id="FR" translatable="yes">Francja</item>
+                          <item id="GF" translatable="yes">Gujana Francuska</item>
+                          <item id="PF" translatable="yes">Polinezja Francuska</item>
+                          <item id="TF" translatable="yes">Francuskie Terytoria Południowe i Antarktyczne</item>
+                          <item id="GA" translatable="yes">Gabon</item>
+                          <item id="GM" translatable="yes">Gambia</item>
+                          <item id="GE" translatable="yes">Gruzja</item>
+                          <item id="DE" translatable="yes">Niemcy</item>
+                          <item id="GH" translatable="yes">Ghana</item>
+                          <item id="GI" translatable="yes">Gibraltar</item>
+                          <item id="EL" translatable="yes">Grecja</item>
+                          <item id="GL" translatable="yes">Grenlandia</item>
+                          <item id="GD" translatable="yes">Grenada</item>
+                          <item id="GP" translatable="yes">Gwadelupa</item>
+                          <item id="GU" translatable="yes">Guam</item>
+                          <item id="GT" translatable="yes">Gwatemala</item>
+                          <item id="GG" translatable="yes">Guernsey</item>
+                          <item id="GN" translatable="yes">Gwinea</item>
+                          <item id="GW" translatable="yes">Gwinea Bissau</item>
+                          <item id="GY" translatable="yes">Gujana</item>
+                          <item id="HT" translatable="yes">Haiti</item>
+                          <item id="HM" translatable="yes">Wyspy Heard i McDonalda</item>
+                          <item id="VA" translatable="yes">Watykan</item>
+                          <item id="HN" translatable="yes">Honduras</item>
+                          <item id="HK" translatable="yes">Hong Kong</item>
+                          <item id="HU" translatable="yes">Węgry</item>
+                          <item id="IS" translatable="yes">Islandia</item>
+                          <item id="IN" translatable="yes">Indie</item>
+                          <item id="ID" translatable="yes">Indonezja</item>
+                          <item id="IR" translatable="yes">Iran</item>
+                          <item id="IQ" translatable="yes">Irak</item>
+                          <item id="IE" translatable="yes">Irlandia</item>
+                          <item id="IM" translatable="yes">Wyspa Man</item>
+                          <item id="IL" translatable="yes">Izrael</item>
+                          <item id="IT" translatable="yes">Włochy</item>
+                          <item id="JM" translatable="yes">Jamajka</item>
+                          <item id="JP" translatable="yes">Japonia</item>
+                          <item id="JE" translatable="yes">Jersey</item>
+                          <item id="JO" translatable="yes">Jordania</item>
+                          <item id="KZ" translatable="yes">Kazachstan</item>
+                          <item id="KE" translatable="yes">Kenia</item>
+                          <item id="KI" translatable="yes">Kiribati</item>
+                          <item id="KP" translatable="yes">Korea Północna</item>
+                          <item id="KR" translatable="yes">Korea Południowa</item>
+                          <item id="XK" translatable="yes">Kosowo</item>
+                          <item id="KW" translatable="yes">Kuwejt</item>
+                          <item id="KG" translatable="yes">Kirgistan</item>
+                          <item id="LA" translatable="yes">Laos</item>
+                          <item id="LV" translatable="yes">Łotwa</item>
+                          <item id="LB" translatable="yes">Liban</item>
+                          <item id="LS" translatable="yes">Lesoto</item>
+                          <item id="LR" translatable="yes">Liberia</item>
+                          <item id="LY" translatable="yes">Libia</item>
+                          <item id="LI" translatable="yes">Liechtenstein</item>
+                          <item id="LT" translatable="yes">Litwa</item>
+                          <item id="LU" translatable="yes">Luksemburg</item>
+                          <item id="MO" translatable="yes">Makao</item>
+                          <item id="MK" translatable="yes">Macedonia</item>
+                          <item id="MG" translatable="yes">Madagascar</item>
+                          <item id="MW" translatable="yes">Malawi</item>
+                          <item id="MY" translatable="yes">Malezja</item>
+                          <item id="MV" translatable="yes">Maldiwy</item>
+                          <item id="ML" translatable="yes">Mali</item>
+                          <item id="MT" translatable="yes">Malta</item>
+                          <item id="MH" translatable="yes">Wyspy Marshalla</item>
+                          <item id="MQ" translatable="yes">Martynika</item>
+                          <item id="MR" translatable="yes">Mauretania</item>
+                          <item id="MU" translatable="yes">Mauritius</item>
+                          <item id="YT" translatable="yes">Majotta</item>
+                          <item id="MX" translatable="yes">Meksyk</item>
+                          <item id="FM" translatable="yes">Mikronezja</item>
+                          <item id="MD" translatable="yes">Mołdawia</item>
+                          <item id="MC" translatable="yes">Monako</item>
+                          <item id="MN" translatable="yes">Mongolia</item>
+                          <item id="MS" translatable="yes">Montserrat</item>
+                          <item id="MA" translatable="yes">Maroko</item>
+                          <item id="MZ" translatable="yes">Mozambik</item>
+                          <item id="MM" translatable="yes">Mjanma</item>
+                          <item id="NA" translatable="yes">Namibia</item>
+                          <item id="NR" translatable="yes">Nauru</item>
+                          <item id="NP" translatable="yes">Nepal</item>
+                          <item id="NL" translatable="yes">Holandia</item>
+                          <item id="AN" translatable="yes">Antyle Holenderskie</item>
+                          <item id="NC" translatable="yes">Nowa Kaledonia</item>
+                          <item id="NZ" translatable="yes">Nowa Zelandia</item>
+                          <item id="NI" translatable="yes">Nikaragua</item>
+                          <item id="NE" translatable="yes">Niger</item>
+                          <item id="NG" translatable="yes">Nigeria</item>
+                          <item id="NU" translatable="yes">Niue</item>
+                          <item id="NF" translatable="yes">Wyspa Norfolk</item>
+                          <item id="MP" translatable="yes">Mariany Północne</item>
+                          <item id="NO" translatable="yes">Norwegia</item>
+                          <item id="OM" translatable="yes">Oman</item>
+                          <item id="PK" translatable="yes">Pakistan</item>
+                          <item id="PW" translatable="yes">Palau</item>
+                          <item id="PS" translatable="yes">Okupowane Terytorium Palestyny</item>
+                          <item id="PA" translatable="yes">Panama</item>
+                          <item id="PG" translatable="yes">Papua Nowa Gwinea</item>
+                          <item id="PY" translatable="yes">Paragwaj</item>
+                          <item id="PE" translatable="yes">Peru</item>
+                          <item id="PH" translatable="yes">Filipiny</item>
+                          <item id="PN" translatable="yes">Pitcairn</item>
+                          <item id="PL" translatable="yes">Polska</item>
+                          <item id="PT" translatable="yes">Portugalia</item>
+                          <item id="PR" translatable="yes">Portoryko</item>
+                          <item id="QA" translatable="yes">Katar</item>
+                          <item id="RE" translatable="yes">Reunion</item>
+                          <item id="RO" translatable="yes">Rumunia</item>
+                          <item id="RU" translatable="yes">Federacja Rosyjska</item>
+                          <item id="RW" translatable="yes">Rwanda</item>
+                          <item id="SH" translatable="yes">Wyspa Świętej Heleny, Wyspa Wniebowstąpienia i Tristan da Cunha</item>
+                          <item id="KN" translatable="yes">Saint Kitts i Nevis</item>
+                          <item id="LC" translatable="yes">Saint Lucia</item>
+                          <item id="PM" translatable="yes">Saint-Pierre i Miquelon</item>
+                          <item id="VC" translatable="yes">Saint Vincent i Grenadyny</item>
+                          <item id="WS" translatable="yes">Samoa</item>
+                          <item id="SM" translatable="yes">San Marino</item>
+                          <item id="ST" translatable="yes">Wyspy Świętego Tomasza i Książęca</item>
+                          <item id="SA" translatable="yes">Arabia Saudyjska</item>
+                          <item id="SN" translatable="yes">Senegal</item>
+                          <item id="RS" translatable="yes">Serbia</item>
+                          <item id="ME" translatable="yes">Czarnogóra</item>
+                          <item id="SC" translatable="yes">Seszele</item>
+                          <item id="SL" translatable="yes">Sierra Leone</item>
+                          <item id="SG" translatable="yes">Singapur</item>
+                          <item id="SK" translatable="yes">Słowacja</item>
+                          <item id="SI" translatable="yes">Słowenia</item>
+                          <item id="SB" translatable="yes">Wyspy Salomona</item>
+                          <item id="SO" translatable="yes">Somalia</item>
+                          <item id="ZA" translatable="yes">Republika Południowej Afryki</item>
+                          <item id="GS" translatable="yes">Georgia Południowa i Sandwich Południowy</item>
+                          <item id="ES" translatable="yes">Hiszpania</item>
+                          <item id="LK" translatable="yes">Sri Lanka</item>
+                          <item id="SD" translatable="yes">Sudan</item>
+                          <item id="SR" translatable="yes">Surinam</item>
+                          <item id="SJ" translatable="yes">Svalbard i Jan Mayen</item>
+                          <item id="SZ" translatable="yes">Suazi</item>
+                          <item id="SE" translatable="yes">Szwecja</item>
+                          <item id="CH" translatable="yes">Szwajcaria</item>
+                          <item id="SY" translatable="yes">Syryjska Republika Arabska</item>
+                          <item id="TW" translatable="yes">Tajwan</item>
+                          <item id="TJ" translatable="yes">Tadżykistan</item>
+                          <item id="TZ" translatable="yes">Tanzania</item>
+                          <item id="TH" translatable="yes">Tajlandia</item>
+                          <item id="TL" translatable="yes">Timor Wschodni</item>
+                          <item id="TG" translatable="yes">Togo</item>
+                          <item id="TK" translatable="yes">Tokelau</item>
+                          <item id="TO" translatable="yes">Tonga</item>
+                          <item id="TT" translatable="yes">Trinidad i Tobago</item>
+                          <item id="TN" translatable="yes">Tunezja</item>
+                          <item id="TR" translatable="yes">Turcja</item>
+                          <item id="TM" translatable="yes">Turkmenistan</item>
+                          <item id="TC" translatable="yes">Wyspy Turks i Caicos</item>
+                          <item id="TV" translatable="yes">Tuvalu</item>
+                          <item id="UG" translatable="yes">Uganda</item>
+                          <item id="UA" translatable="yes">Ukraina</item>
+                          <item id="AE" translatable="yes">Zjednoczone Emiraty Arabskie</item>
+                          <item id="GB" translatable="yes">Wielka Brytania</item>
+                          <item id="US" translatable="yes">Stany Zjednoczone</item>
+                          <item id="UM" translatable="yes">Dalekie Wyspy Mniejsze Stanów Zjednoczonych</item>
+                          <item id="UY" translatable="yes">Urugwaj</item>
+                          <item id="UZ" translatable="yes">Uzbekistan</item>
+                          <item id="VU" translatable="yes">Vanuatu</item>
+                          <item id="VE" translatable="yes">Wenezuela</item>
+                          <item id="VN" translatable="yes">Wietnam</item>
+                          <item id="VG" translatable="yes">Brytyjskie Wyspy Dziewicze</item>
+                          <item id="VI" translatable="yes">Wyspy Dziewicze Stanów Zjednoczonych.</item>
+                          <item id="WF" translatable="yes">Wallis i Futuna</item>
+                          <item id="EH" translatable="yes">Sachara Zachodnia</item>
+                          <item id="YE" translatable="yes">Jemen</item>
+                          <item id="ZM" translatable="yes">Zambia</item>
+                          <item id="ZW" translatable="yes">Zimbabwe</item>
+                        </items>
+                        <signal name="changed" handler="on_input_buyer_country_changed" object="input_product1_vat_rate" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left-attach">3</property>
+                        <property name="top-attach">6</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <!-- n-columns=8 n-rows=5 -->
+                  <object class="GtkGrid">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-right">5</property>
+                    <property name="margin-top">30</property>
+                    <property name="margin-bottom">20</property>
+                    <property name="border-width">5</property>
+                    <property name="column-spacing">10</property>
+                    <property name="row-homogeneous">True</property>
+                    <child>
+                      <object class="GtkLabel" id="lbl_table_product">
+                        <property name="name">lbl_table_product</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="label" translatable="yes">Product</property>
+                        <attributes>
+                          <attribute name="weight" value="semibold"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_table_measure">
+                        <property name="name">lbl_table_measure</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Measure</property>
+                        <attributes>
+                          <attribute name="weight" value="semibold"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_table_qty">
+                        <property name="name">lbl_table_qty</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="hexpand">False</property>
+                        <property name="label" translatable="yes">Qty</property>
+                        <attributes>
+                          <attribute name="weight" value="semibold"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_table_net">
+                        <property name="name">lbl_table_net</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="hexpand">False</property>
+                        <property name="label" translatable="yes">Net price</property>
+                        <attributes>
+                          <attribute name="weight" value="semibold"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left-attach">3</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_table_net_total">
+                        <property name="name">lbl_table_net_total</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="hexpand">False</property>
+                        <property name="label" translatable="yes">Net</property>
+                        <attributes>
+                          <attribute name="weight" value="semibold"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left-attach">4</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_table_vat_rate">
+                        <property name="name">lbl_table_vat_rate</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="hexpand">False</property>
+                        <property name="label" translatable="yes">VAT Rate</property>
+                        <attributes>
+                          <attribute name="weight" value="semibold"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left-attach">5</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_table_vat_value">
+                        <property name="name">lbl_table_vat_value</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="hexpand">False</property>
+                        <property name="label" translatable="yes">VAT Value</property>
+                        <attributes>
+                          <attribute name="weight" value="semibold"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left-attach">6</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="lbl_table_brutto">
+                        <property name="name">lbl_table_brutto</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Gross</property>
+                        <attributes>
+                          <attribute name="weight" value="semibold"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left-attach">7</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_product1_name">
+                        <property name="name">input_product1_name</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="width-chars">44</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_product1_net">
+                        <property name="name">input_product1_net</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="width-chars">7</property>
+                        <signal name="changed" handler="on_input_product1_net_changed" object="input_product1_qty" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left-attach">3</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_product1_vat_rate">
+                        <property name="name">input_product1_vat_rate</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="halign">center</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">False</property>
+                        <property name="width-chars">7</property>
+                        <property name="text" translatable="yes">-</property>
+                        <signal name="changed" handler="on_input_product1_vat_rate_changed" object="input_product1_netto" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left-attach">5</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkComboBoxText" id="input_product1_qty">
+                        <property name="name">input_product1_qty</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">False</property>
+                        <property name="active">0</property>
+                        <items>
+                          <item translatable="yes">1</item>
+                          <item translatable="yes">2</item>
+                          <item translatable="yes">3</item>
+                          <item translatable="yes">4</item>
+                          <item translatable="yes">5</item>
+                          <item translatable="yes">6</item>
+                          <item translatable="yes">7</item>
+                          <item translatable="yes">8</item>
+                        </items>
+                        <signal name="changed" handler="on_input_product1_qty_changed" object="input_product1_net" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="input_product1_szt">
+                        <property name="name">input_product1_szt</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="label" translatable="yes">szt</property>
+                        <property name="width-chars">3</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Total Amount</property>
+                        <attributes>
+                          <attribute name="font-desc" value="Sans 16"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">3</property>
+                        <property name="width">4</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Amout to pay</property>
+                        <attributes>
+                          <attribute name="font-desc" value="Sans 18"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">4</property>
+                        <property name="width">6</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_product2_name">
+                        <property name="name">input_product2_name</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="width-chars">44</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="input_product2_szt">
+                        <property name="name">input_product2_szt</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="label" translatable="yes">szt</property>
+                        <property name="width-chars">3</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkComboBoxText" id="input_product2_qty">
+                        <property name="name">input_product2_qty</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">False</property>
+                        <property name="active">0</property>
+                        <items>
+                          <item translatable="yes">1</item>
+                          <item translatable="yes">2</item>
+                          <item translatable="yes">3</item>
+                          <item translatable="yes">4</item>
+                          <item translatable="yes">5</item>
+                          <item translatable="yes">6</item>
+                          <item translatable="yes">7</item>
+                          <item translatable="yes">8</item>
+                        </items>
+                        <signal name="changed" handler="on_input_product2_qty_changed" object="input_product2_net" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_product2_net">
+                        <property name="name">input_product2_net</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="width-chars">7</property>
+                        <signal name="changed" handler="on_input_product2_net_changed" object="input_product2_qty" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left-attach">3</property>
+                        <property name="top-attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_product2_vat_rate">
+                        <property name="name">input_product2_vat_rate</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="halign">center</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="hexpand">False</property>
+                        <property name="width-chars">7</property>
+                        <property name="text" translatable="yes">-</property>
+                        <signal name="changed" handler="on_input_product2_vat_rate_changed" object="input_product2_netto" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left-attach">5</property>
+                        <property name="top-attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_product1_netto">
+                        <property name="name">input_product1_netto</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="halign">center</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="editable">False</property>
+                        <property name="width-chars">7</property>
+                        <signal name="changed" handler="on_input_product1_netto_changed" object="input_product1_vat_rate" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left-attach">4</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_product2_netto">
+                        <property name="name">input_product2_netto</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="halign">center</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="editable">False</property>
+                        <property name="width-chars">7</property>
+                        <signal name="changed" handler="on_input_product2_netto_changed" object="input_product2_vat_rate" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left-attach">4</property>
+                        <property name="top-attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_product1_vat_value">
+                        <property name="name">input_product1_vat_value</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="editable">False</property>
+                        <property name="width-chars">3</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">6</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_product2_vat_value">
+                        <property name="name">input_product2_vat_value</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="editable">False</property>
+                        <property name="width-chars">3</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">6</property>
+                        <property name="top-attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_product1_brutto">
+                        <property name="name">input_product1_brutto</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="editable">False</property>
+                        <property name="width-chars">7</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">7</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_product2_brutto">
+                        <property name="name">input_product2_brutto</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="editable">False</property>
+                        <property name="width-chars">7</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">7</property>
+                        <property name="top-attach">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_total_netto">
+                        <property name="name">input_total_netto</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="halign">center</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="editable">False</property>
+                        <property name="width-chars">7</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">4</property>
+                        <property name="top-attach">3</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_total_vat_value">
+                        <property name="name">input_total_vat_value</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="editable">False</property>
+                        <property name="width-chars">7</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">6</property>
+                        <property name="top-attach">3</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_total_brutto">
+                        <property name="name">input_total_brutto</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="editable">False</property>
+                        <property name="width-chars">7</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">7</property>
+                        <property name="top-attach">3</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_total_vat_rate">
+                        <property name="name">input_total_vat_rate</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="halign">center</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="editable">False</property>
+                        <property name="width-chars">7</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">5</property>
+                        <property name="top-attach">3</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="input_total">
+                        <property name="name">input_total</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="margin-left">5</property>
+                        <property name="margin-right">5</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="editable">False</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">6</property>
+                        <property name="top-attach">4</property>
+                        <property name="width">2</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-top">10</property>
+                    <property name="margin-bottom">10</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkButton" id="btn_print">
+                        <property name="label">gtk-print</property>
+                        <property name="name">btn_print</property>
+                        <property name="width-request">218</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <property name="halign">center</property>
+                        <property name="hexpand">True</property>
+                        <property name="use-stock">True</property>
+                        <signal name="clicked" handler="on_btn_print_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">3</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

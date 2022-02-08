@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Shams Pathan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style type="text/css">
+		body{font-size: 15px;line-height: 24px; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;}
+		.total-inter{font-size:20px;}
+		.total{font-size:24px;}
+		.table thead{background:#eee;}
+		.name{display:block;margin-bottom:10px;}
+		.nip{display:block;margin-top:8px;}
+		 @page { 
+			 margin:0px;
+			 size: auto;
+		 }
+		@media print {
+			body { -webkit-print-color-adjust: exact; } 
+			@page {
+				margin-left:30px;
+				margin-right:20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="page-header text-center">
+				  <h1>Shams Pathan</h1>
+				</div>
+				<div class="row">
+					<div class="col-xs-5 col-xs-offset-7 panel panel-default">
+						<div class="panel-body">
+							<h4>Data shams %shamsdate%</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-7">
+						<h3>Seller</h3>
+						<address>%seller%</address>
+					</div>
+					<div class="col-xs-5 text-left">
+						<h3>Buyer</h3>
+						<address>%buyer%</address>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br/>
+		<br/>
+		
+		<div class="row">
+			<table class="table">
+				<thead>
+					<tr>
+						<td class="text-center">Towar lub usługa</td>
+						<td class="text-center">J.m</td>
+						<td class="text-center">Ilość</td>
+						<td class="text-center">Cena netto %currency0%</td>
+						<td class="text-center">Wartość netto %currency1%</td>
+						<td class="text-center">Stawka VAT (%)</td>
+						<td class="text-center">Kwota VAT %currency2%</td>
+						<td class="text-center">Cena brutto %currency3%</td>
+					</tr>
+				</thead>
+				<tbody>
+					%product1%
+					%product2%
+					<tr class="total-inter">
+						<td colspan="4" class="thick-line text-center">Amount</td>
+						<td class="thick-line text-center">%total_netto%</td>
+						<td class="thick-line text-center"></td>
+						<td class="thick-line text-center">%total_vat%</td>
+						<td class="thick-line text-center">%total_brutto%</td>
+					</tr>
+					<tr class="total">
+						<td colspan="4" class="no-line text-center">Amount to pay</td>
+						<td colspan="2" class="thick-line text-center"></td>
+						<td colspan="2" class="thick-line text-center">%total% %currency%</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>%mentions%</p>
+		</div>
+	</div>
+</body>
+</html>
